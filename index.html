@@ -73,15 +73,84 @@
 
     /* 👉 Task 3 - [HINT] the flex direction can be reversed */
 
+    #flexContainer3 {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      padding-bottom: 50px;
+    }
+
     /* 👉 Task 4 - [HINT] the flex items need a new order */
+
+    #flexContainer4 {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+    }
+    #flexContainer4 .flexItem {
+      order: 0;
+    }
+    #flexContainer4 .flexItem:nth-child(1) {
+      order: 1;
+    }
+    #flexContainer4 .flexItem:nth-child(2) {
+      order: 2;
+    }
+    #flexContainer4 .flexItem:nth-child(3) {
+      order: 0;
+    }
 
     /* 👉 Task 5 - [HINT] research align-self */
 
+    #flexContainer5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    #flexContainer5 .flexItem:nth-child(2) {
+      display: flex;
+      align-self: center;
+    }
+    #flexContainer5 .flexItem:nth-child(1) {
+      margin-top: 20px;
+    }
+    #flexContainer5 .flexItem:nth-child(3) {
+      margin-bottom: 20px;
+    }
+    
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
 
+    #flexContainer6 {
+      display: flex;
+      align-items: flex-end;
+    }
+    #flexContainer6 .flexItem {
+      order: 0;
+    }
+    #flexContainer6 .flexItem:nth-child(1) {
+      display: flex;
+      order: 1;
+      align-items: flex-end;
+      flex-direction: column;
+    }
+    #flexContainer6 .flexItem:nth-child(2) {
+      display: flex;
+      align-items: flex-end;
+    }
+    #flexContainer6 .flexItem:nth-child(3) {
+      display: flex;
+      order: -1;
+      align-self: flex-start;
+    }
+    
     /* 👉 Task 7 - [HINT] research flex-grow */
 
+    
+
     /* 👉 Task 8 - [HINT] you got this! */
+
+    /* justify-content: flex-end; */
 
 
     /*
